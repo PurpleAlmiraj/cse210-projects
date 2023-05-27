@@ -22,7 +22,7 @@ public class Journal
             entry.Display();
         }
     }
-    public void SaveToFile(string filename)
+    public void Save(string filename)
     {
     using (var writer = new StreamWriter(filename))
     {
@@ -31,5 +31,6 @@ public class Journal
             writer.WriteLine($"Date: {entry._date} Prompt: {entry._prompt} Entry: {entry._entry}");
         }
     }
+    
     }
 }

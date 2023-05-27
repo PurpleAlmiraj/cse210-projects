@@ -21,7 +21,8 @@ public class PromptGenerator
             "Write about a moment when you felt truly proud of yourself.",
             "What is a habit that you would like to develop or break? Why?",
             "Describe a challenge that you have overcome in the past. What did you learn from the experience?",
-            "How have you seen the Lord's hand today?"
+            "How have you seen the Lord's hand today?",
+            "How did you help someone today?"
         };
     }
 
@@ -35,5 +36,6 @@ public class PromptGenerator
         }
 
         return prompts[index];
+    
     }
 }

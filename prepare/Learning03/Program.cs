@@ -22,3 +22,11 @@ class Program
         
     }
 }
+
+String = Thus saith the Lord
+Split (“ ”, string)
+Display (
+For each{
+Word + “ “ 
+}
+)

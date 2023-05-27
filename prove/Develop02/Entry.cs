@@ -6,6 +6,6 @@ public class DailyEntry
     public string _entry;
     public void Display()
     {
-        Console.WriteLine($"Date: {_date} - Prompt: {_prompt}. Entry: {_entry}");
+        Console.WriteLine($"Date: {_date} - Prompt: {_prompt}. Entry:  {_entry}");
     }
 }

@@ -12,5 +12,6 @@ public class Show
         Console.WriteLine("What would you like to do? ");
         int userInput = Convert.ToInt32(Console.ReadLine());
         return userInput;
+    
     }
 }

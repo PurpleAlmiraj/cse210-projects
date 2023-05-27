@@ -47,7 +47,7 @@ internal class NewBaseType
             {
                 Console.WriteLine("Enter filename to save:");
                 string filename = Console.ReadLine();
-                journal.SaveToFile(filename);
+                journal.Save(filename);
             }
             // quit
             if (userChoice >= 5)
@@ -58,6 +58,7 @@ internal class NewBaseType
 
 
             
+        
         }
     }
 }
