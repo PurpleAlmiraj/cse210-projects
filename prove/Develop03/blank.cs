@@ -1,19 +1,19 @@
 public class Blank
 {
+
+
     public string ProcessScripture(string reference, string scripture, int number)
     {
-        // Split the scripture into individual words
+        // Split
         string[] words = scripture.Split(' ');
-
-        // Get the indices of words that are not already blanked out
+        // Blank out words not already blanked
         List<int> indicesToBlank = new List<int>();
         for (int i = 0; i < words.Length; i++)
         {
             if (!IsWordBlanked(words[i]))
                 indicesToBlank.Add(i);
         }
-
-        // Randomly select three indices from the available indices
+        // Random Select
         Random random = new Random();
         for (int i = 0; i < 3 && indicesToBlank.Count > 0; i++)
         {
@@ -25,10 +25,9 @@ public class Blank
             indicesToBlank.RemoveAt(randomIndex);
         }
 
-        // Join the words back into a string
         string modifiedScripture = string.Join(" ", words);
 
-        // Generate the full scripture with reference
+
         string fullScripture;
         fullScripture = modifiedScripture;
         return fullScripture;
