@@ -39,7 +39,7 @@ internal class NewBaseType
                 string fileName = Console.ReadLine();
                 string content = File.ReadAllText(fileName);
 
-                // Display the contents
+                // Display the contents-
                 Console.WriteLine(content);
             }
             // save
