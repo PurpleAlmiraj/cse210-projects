@@ -1,9 +1,9 @@
 public class Product
 {
-    private string name;
-    private int productId;
-    private decimal price;
-    private int quantity;
+    private string _name;
+    private int _productId;
+    private decimal _price;
+    private int _quantity;
 
 
 
@@ -13,34 +13,34 @@ public class Product
 
     public Product(string name, int productId, decimal price, int quantity)
     {
-        this.name = name;
-        this.productId = productId;
-        this.price = price;
-        this.quantity = quantity;
+        _name = name;
+        _productId = productId;
+        _price = price;
+        _quantity = quantity;
     }
 
     public string Name
     {
-        get { return name; }
+        get { return _name; }
     }
 
     public int ProductId
     {
-        get { return productId; }
+        get { return _productId; }
     }
 
     public decimal Price
     {
-        get { return price; }
+        get { return _price; }
     }
 
     public int Quantity
     {
-        get { return quantity; }
+        get { return _quantity; }
     }
 
     public decimal CalculateTotalPrice()
     {
-        return price * quantity;
+        return _price * _quantity;
     }
 }
